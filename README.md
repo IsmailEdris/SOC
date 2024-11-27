@@ -1,48 +1,12 @@
 # SOC Analyst Home Lab Project
-
-This repository provides a detailed walkthrough for setting up and running the SOC Analyst Home Lab. It is based on the blog post, with step-by-step instructions and images to guide you through the process.
-
----
+Becoming a skilled SOC analyst requires more than just theoretical knowledge; hands-on experience is crucial. In this blog, I will take you through the process of setting up my SOC home lab. I used tools like LimaCharlie and YARA rules to detect and respond to malicious activities, such as Sliver C2 payloads, while refining Detection and Response (D&R) rules to minimize false positives. This process closely mirrors the workflows employed in real-world SOC operations. This project was inspired by Eric Capuano's [So you want to be an SOC Analyst?](https://blog.ecapuano.com/p/so-you-want-to-be-a-soc-analyst-part)
 
 ## Table of Contents
-1. [Introduction](#introduction)
-2. [Prerequisites](#prerequisites)
-3. [Lab Setup](sections/lab_setup.md)
-4. [Tools Installation](sections/tools_installation.md)
-5. [Payload Generation and Detection](#payload-generation-and-detection)
-6. [Conclusion](#conclusion)
+1. [Setting up the Lab Environment](LinkToFile)
+2. [Generating C2 Payload](LinkToFile)
+3. [Observing the EDR Telmetry](LinkToFile)
+4. [Building and Testing D&R Rules for lsass.exe](LinkToFile)
+5. [Building and Testing D&R RUles for Volume Shadow Copies](LinkToFile)
+6. [Tuning False Positives](LinkToFile)
+7. [Creating YARA Rules to Detect Sliver Payloads](LinkToFile)
 
----
-
-## Introduction
-
-This lab focuses on building a simulated home lab environment for SOC analysts to practice detection and response techniques.
-
----
-
-## Prerequisites
-
-- A computer capable of running multiple VMs.
-- Virtualization software (e.g., VirtualBox, VMware).
-- ISO files for Ubuntu and Windows OS.
-- Internet connection for downloading tools.
-
----
-
-## Payload Generation and Detection
-
-Use Sliver C2 to generate and deploy payloads. Monitor activity using LimaCharlie.
-
-```bash
-# Generate a Sliver payload
-./sliver-client generate beacon --os windows --arch amd64
-
-# Serve the payload using a Python HTTP server
-python3 -m http.server
-```
-
----
-
-## Conclusion
-
-Congratulations! You’ve successfully set up the SOC Analyst Home Lab.
