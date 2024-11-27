@@ -10,3 +10,10 @@ Becoming a skilled SOC analyst requires more than just theoretical knowledge; ha
 6. [Tuning False Positives](Tuning False Positives)
 7. [Creating YARA Rules to Detect Sliver Payloads](Creating YARA Rules to Detect Sliver Payloads)
 
+SOC_Analyst_Home_Lab/
+├── README.md
+├── sections/
+│   ├── lab_setup.md
+│   ├── tools_installation.md
+│   ├── detection_rules.md
+
